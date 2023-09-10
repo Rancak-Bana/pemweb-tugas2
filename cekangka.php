@@ -37,10 +37,12 @@
                         $angka2 = $_POST['angka2'];
                         // loop untuk tampil angka genap
                         $hasil = "";
-                        for ($i = $angka1; $i <= $angka2; $i++) {
+                        $i = $angka1;
+                        while ($i <= $angka2) {
                             if ($i % 2 == 0) {
                                 $hasil .= $i . " ";
                             }
+                            $i++;
                         }
                         // tampilkan hasil
                         echo '<input name="hasil" type="text" value="' . $hasil . '" readonly>';
